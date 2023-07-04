@@ -1,11 +1,10 @@
-package app;
+package jalon_algo_niveau1;
 
 import java.util.Scanner;
 
 public class App {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		String prenom;
 		String nom;
 		int departement;
@@ -25,7 +24,7 @@ public class App {
 	
 		
 		sc.close();
+
 	}
-		
+
 }
-		
