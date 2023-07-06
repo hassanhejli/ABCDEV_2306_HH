@@ -1,44 +1,50 @@
 package kilometre_miles;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class app {
 
 	public static void main(String[] args) {
 	
-		double kilometres = 0;
-		double miles;
-		boolean resolu = false;
-		
-		 
-		Scanner sc = new Scanner(System.in);
-		
-		do {
+			double Kilo = 0;
+			double Miles = 0;
+			String kiloError;
+			boolean Verif = false;
 			
-		System.out.println("entrez le nombre de km");
-		kilometres = sc.nextDouble();
-		
-		if (kilometres > 0.01 && kilometres < 1000000) {
-			
-			resolu = true;
-			
-		}
-		
-		
-		else {
-			resolu = false;
-			System.out.println("veuillez saisir une nouvelle valeur");
-		}
-		
-		} while (resolu == false) ;
-		miles = (kilometres * 0.62);
-		
-		
-		System.out.println("la valeur en miles de:" + "  " + kilometres + " km " + "  " + "est de" + "  "  + miles + " " + "miles");
-		
-		sc.close();	
+		Scanner scanner = new Scanner(System.in);
+			while (Verif == false) 
+			{	
+			System.out.println("Entrez le nombre de kilometres");
+			if (scanner.hasNextDouble()) //methode qui detecte le type de la saisie et renvoie true ou false selon le type renseigné
+				{
+				Kilo = scanner.nextDouble(); //ici un double renseigne
+					if (Kilo < 0.01 || Kilo > 1000000)
+					{
+						System.out.println("entree invalide!");
+					}else 
+						{
+							Verif = true;
+							scanner.close();
+						}
+				}else // les autres types passent dans le else comme ici une chaine de caracteres
+				{
+				kiloError = scanner.next();
+					if ((kiloError.equals("q")) || (kiloError.equals("Q"))) 
+					{
+					System.exit(0);//permet de quitter le programme
+					}else 
+						{
+							System.out.println("entree invalide!");
+						}
+					}
+				}
 
+			Miles = Math.round((Kilo / 1.609) *100.0)/100.0;
+			System.out.println(Kilo + "km donne: " + Miles + "  miles");
 	}
-
 }
+	
+
+			
+
+
