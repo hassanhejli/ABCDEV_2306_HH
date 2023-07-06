@@ -4,24 +4,37 @@ import java.util.Scanner;
 
 public class app {
 	/* variables
+	 * reste est un entier
 	 * n est un entier
+	 * flag est un booleen
+	 * 
 	 * 	debut du programme
 	 * 	ecrire "entrez un nombre"
 	 * 	lire <--n
+	 * 		debut pour
+	 * 		i=2 i inferieur à i/2 ajouter 1 a chaque fois
+	 * 		lire reste<-- n modulo de i
 	 * 		debut si
-	 * 		 si le reste de n par 1 et le reste de n par n est égal a zero
-	 * 			alors 
-	 * 			ecrire n est un nombre premier
+	 * 		si reste = zero
+	 * 		alors arreter la bloucle
 	 * 		sinon
-	 * 			ecrire n n'est pas un nombre premier
+	 * 		continuer la boucle
+	 * 		fin si
+	 * 		fin pour
+	 * 		debut si
+	 * 		si flag est vrai
+	 * 		alors
+	 * 		ecrire "n" +  "est un nombre premier"
+	 * 		sinon 
+	 * 		ecrire "n" + "n'est pas un nombre premier"
 	 * 		fin si
 	 * 	fin du programme
 	 */
 	public static void main(String[] args) {
 		
-		int reste;
-		  boolean flag = true;
-		  int nbr = 17;
+			int reste;
+			boolean flag = true;
+			int nbr = 17;
 		  
 		  Scanner sc = new Scanner(System.in);
 		     System.out.println("entrez un nombre");  
