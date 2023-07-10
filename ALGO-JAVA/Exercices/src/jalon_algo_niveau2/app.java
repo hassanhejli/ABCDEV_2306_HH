@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class app {
 
 	public static void main(String[] args) {
-		boolean Verif;
+		boolean Verifi;
 		String etudiant;
 		int jour;
 		
@@ -14,10 +14,10 @@ public class app {
 		System.out.println("etes vous étudiant, tapez (O) pour oui, ou tapez (N) pour non");
 		etudiant = sc.next();
 		if ((etudiant.equals("n")) || (etudiant.equals("N"))) {
-			Verif = false;
+			Verifi = false;
 			System.out.println("vous n'avez droit à aucune reduction");	
 		}else if ((etudiant.equals("o")) || (etudiant.equals("O"))) {
-			Verif = true;
+			Verifi = true;
 			System.out.println("tapez le jour souhaité de (1) a (7)");
 			jour = sc.nextInt();
 			if (jour == 3) {
