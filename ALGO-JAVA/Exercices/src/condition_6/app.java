@@ -38,14 +38,15 @@ Fin*/
 			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");
 			 
 		 }else {
-			 minute = minute;
+			 minute = minute + 1;
 			 heure = heure;
 			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");
 		 }if (heure == 24) {
 			 heure = 00;
+			 minute = minute + 1;
 			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");	 
 		 }else {
-			
+			heure = heure + 1;
 			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");	 
 		 }
 		

@@ -19,11 +19,13 @@ public class app {
 		b = sc.nextInt(); 
 		
 		if (a < b) {
-			System.out.println(a + " " + b);
+			System.out.println("la valeur "+ a + " est plus petite que la valeur  " + b);
 		}
 		
-		else {
-			System.out.println(b + " " + a);
+		else if(b < a) {
+			System.out.println("la valeur "+ b + " est plus petite que la valeur  " + a); 
+		}else {
+			System.out.println("les deux valeurs " + a + " et " + b + " sont egales");
 		}
 		
 		sc.close();
