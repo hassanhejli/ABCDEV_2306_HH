@@ -8,13 +8,6 @@ public class app {
 		boolean Verif;
 		String etudiant;
 		int jour;
-		int pos1;
-		int pos2;
-		int pos3;
-		int pos4;
-		int pos5;
-		int pos6;
-		int pos7;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,20 +20,17 @@ public class app {
 			Verif = true;
 			System.out.println("tapez le jour souhaité de (1) a (7)");
 			jour = sc.nextInt();
-			if ( jour == 3);{	
-				pos3 = sc.nextInt();
-
-				System.out.println("vous avez droit a une reduction de 20%");
-			}
-			}else if (jour == 4);{
-				pos4 == sc.nextInt();
-				System.out.println("vous avez droit a une reduction de 50%");
-				else if (jour = 1 || jour = 2 || jour = 5 || jour = 6 || jour = 7);{
-					System.out.println("vous n'avez droit a aucune reduction");
-				}
+			if (jour == 3) {
+				System.out.println("vous avez droit a 20% de reduction");
+			}else if (jour == 4) { 
+				System.out.println("vous avez droit a 50% de reduction");
 			}else {
-				System.out.println("entree invalide");
+				System.out.println("vous n'avez droit a aucune reduction");
 			}
-	}
-
+		}else {
+			System.out.println("saisie invalide");
+		}
+		
+		sc.close();
+}
 }
