@@ -119,7 +119,7 @@ public class app {
 		
 		
 
-				// ici on determine le premier des candidats
+				// ici on determine si le candidat 1 est premier
 			if ((candidat1 > candidat2) && (candidat1 > candidat3) && (candidat1 > candidat4))
 			{
 				estPremier = true;
@@ -129,6 +129,7 @@ public class app {
 				estPremier = false;
 			}
 			
+				// ici on determine la sortie du candidat 1 en fonction de sa place et de son score
 			if (candidat1 > (score/2))
 			{
 				System.out.println("le candidat 1 est elu des le 1er tour");
