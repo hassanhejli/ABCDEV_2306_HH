@@ -10,12 +10,13 @@ Début
 Ecrire "Entrez les heures, puis les minutes, puis les secondes : "
 Lire h, m, s
 m=m+1
-si m=60 alors
-m=0
-h=h+1
-Finsi
-si h=24 alors
-h=0
+si h= 23 & m=59 alors
+h = 0
+m = 0
+sinon si minute = 59 alors
+h=heure + 1
+sinon
+m = m + 1
 Finsi
 Ecrire "Dans une seconde, il sera ",h,"heures",m,"minutes",s,"secondes"
 Fin*/
@@ -32,24 +33,18 @@ Fin*/
 		 heure = sc.nextInt();
 		 System.out.println("entrez les minutes");
 		 minute = sc.nextInt();
-		 if (minute == 60) {
-			 minute = 0;
-			 heure = heure + 1;
-			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");
-			 
-		 }else {
-			 minute = minute + 1;
-			 heure = heure;
-			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");
-		 }if (heure == 24) {
+		 
+		 if (heure == 23 && minute == 59) {
 			 heure = 00;
-			 minute = minute + 1;
-			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");	 
-		 }else {
-			heure = heure + 1;
-			 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");	 
+			 minute = 00;
+		 }else if (minute == 59) {
+			 minute = 00;
+			 heure = heure + 1; 
+		 }else  {
+			 minute = minute + 1;	 
 		 }
 		
+		 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes");
 		 
 		 sc.close();
 	}
