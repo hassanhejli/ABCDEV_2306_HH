@@ -34,7 +34,7 @@ public class app {
 			 seconde = seconde + 1;
 		 }
 		
-		 System.out.println("dans une minute il sera  " + heure + " heures" + " " + minute + " minutes et " + seconde + " secondes");
+		 System.out.println("dans une seconde il sera  " + heure + " heures" + " " + minute + " minutes et " + seconde + " secondes");
 		 
 		 sc.close();
 
