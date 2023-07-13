@@ -142,10 +142,13 @@ public class app {
 			{
 				System.out.println("le candidat 1 est en ballotage defavorable");
 			}
-			else {
+			else if (candidat2 > (score/2) || candidat3 > (score/2) || candidat4 > (score/2)){
 				System.out.println("le candidat 1 est battu");
 			}
-			
+			else
+			{
+				System.out.println("le candidat 1 est battu");
+			}
 			sc.close();
 	}
 
