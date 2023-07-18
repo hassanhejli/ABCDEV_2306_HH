@@ -51,10 +51,12 @@ public class app {
 			double Kilo = 0;
 			double Miles = 0;
 			String kiloError;
-			boolean Verif = false;
+			boolean VerifSaisie = false;
 			
 		Scanner scanner = new Scanner(System.in);
-			while (Verif == false) 
+			
+		
+		while (VerifSaisie == false) 
 			{	
 			System.out.println("Entrez le nombre de kilometres");
 			if (scanner.hasNextDouble()) //methode qui detecte le type de la saisie et renvoie true ou false selon le type renseigné
@@ -65,7 +67,7 @@ public class app {
 						System.out.println("entree invalide!");
 					}else 
 						{
-							Verif = true;
+							VerifSaisie = true;
 							
 						}
 			}else // les autres types passent dans le else comme ici une chaine de caracteres

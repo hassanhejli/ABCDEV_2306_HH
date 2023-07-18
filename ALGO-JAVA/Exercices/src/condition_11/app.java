@@ -78,38 +78,42 @@ public class app {
 		// on affecte la valeur de point en fonction des conditions
 		if (condition1 = false)
 		{
-			point = point + 1;
+			point = point - 1;
 		}
 		if (condition2 = false)
 		{
-			point = point + 1;
+			point = point - 1;
 		}
-		if (condition3 = false)
+		if (condition3 = true)
 		{
 			point = point + 1;
 		}
 		
 		// on determine le tarif en fonction du nombre de point
 		
-		if (point <= 0)
+		if (point == 0)
 		{ 
-			tarif = "bleu";
+			tarif = "rouge";
 			System.out.println("nous pouvons vous assurez au tarif " + tarif);
 		}
 		else if (point == 1)
 		{ 
-			tarif = "vert";
+			tarif = "orange";
 			System.out.println("nous pouvons vous assurez au tarif " + tarif);
 		}
 		else if (point == 2)
 		{ 
-			tarif = "orange";
+			tarif = "vert";
 			System.out.println("nous pouvons vous assurez au tarif " + tarif);
 		}
 		else if (point == 3)
 		{ 
-			tarif = "rouge";
+			tarif = "bleu";
 			System.out.println("nous pouvons vous assurez au tarif " + tarif);
+		}
+		else if (point < 0)
+		{
+			System.out.println("nous ne pouvons pas vous assurez");
 		}
 		else 
 		{ 
