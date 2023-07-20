@@ -8,12 +8,14 @@ public class app {
 	 rayon est un entier
 	 aire est un reel
 	 volume est un reel
+	 CONSTANTES
 	 pi est un reel
 	 DEBUT DU PROGRAMME
 	 ECRIRE "entrez la valeur du rayon"
 	 LIRE <-- rayon
-	 aire = (4 * pi)* rayon au carre
-	 volume = ((4*pi)/3) * rayon au cube
+	 pi <-- 3.1415
+	 aire <-- (4 * pi)* rayon au carre
+	 volume <-- ((4*pi)/3) * rayon au cube
 	 ECRIRE "pour un rayon de" + rayon + "d'une sphere, son aire est de" + aire + "et son volume est de" + volume
 	 FIN DU PROGRAMME
 	 */
@@ -21,7 +23,6 @@ public class app {
 	public static void main(String[] args) {
 		
 		// Declaration des variables
-		
 		int rayon;
 		double aire;
 		double volume;
