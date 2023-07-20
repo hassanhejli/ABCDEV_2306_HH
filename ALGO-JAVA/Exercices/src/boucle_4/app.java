@@ -4,6 +4,20 @@ import java.util.Scanner;
 
 public class app {
 
+	/*
+	 VARIABLES
+	 	nombre est un entier
+	 	somme est un entier
+	 	i est un entier
+	 DEBUT DU PROGRAMME
+	 	Ecrire "saisissez un nombre, nous afficherons la somme des entiers jusqu'a ce nombre"
+	 	Lire nombre
+	 	DEBUT POUR
+	 	POUR i = 0 à nombre
+	 	FAIRE somme <-- somme + i
+	 	FIN POUR
+	 FIN DU PROGRAMME
+	 */
 	public static void main(String[] args) {
 		
 		int nombre;
@@ -18,10 +32,10 @@ public class app {
 		
 		for (i=0; i<= nombre; i++)
 		{
-			somme +=i;
+			somme += i;
 		}
 		
-		System.out.println("pour le nombre saisi " + nombre + " la somme des entiers est : " + somme);
+		System.out.println("pour le nombre saisi " + nombre + " la somme des entiers jusqu'a " + nombre + " est : " + somme);
 		
 		hasscan.close();
 		
