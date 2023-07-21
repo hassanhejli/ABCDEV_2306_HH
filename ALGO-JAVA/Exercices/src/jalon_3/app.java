@@ -8,37 +8,52 @@ public class app {
 	 VARIABLES
 	 	nombre est un entier
 	 	i est un entier
+	 	resultat est un entier
+	 	fermetureProg est un booleen
+	 	SaisieValide est un booleen
+	 	saisieUtilisateur est une chaine de caractere
 	 	
 	 DEBUT DU PROGRAMME
-	 		Ecrire "entrez un nombre"
-	 		Lire nombre
-	 		i<-- 0
-	 		DEBUT POUR
-	 		POUR i <= 10
-	 		Faire i++
-	 		ecrire i * nombre = nombre
-	 		FIN POUR
-	 		Ecrire "souhaitez vous une autre table"
-	 		DEBUT SI
-	 		SI OUI
-	 		Ecrire entrez nombre
-	 		Lire nombre
-	 		i <-- 0
-	 		DEBUT tant que
-	 		tant que i <= 10
-	 		FAIRE i++
-	 		FIN TANT QUE
-	 		SINON
-	 		FIN DU PROGRAMME
-	 		
-	 		
+	 DEBUT FAIRE TANT QUE
+	 FAIRE
+	 	Ecrire "saisir un nombre de 1 à 10"
+	 	Lire nombre
+	 DEBUT SI
+	 	si nombre >=1 et <= 10
+	 	saisieValide <-- vrai
+	 DEBUT POUR
+	 	POUR i allant de 0 à 10
+	 	resultat <-- i * nombre
+	 	Ecrire i, "*", nombre, "=", resultat
+	 	Ecrire i * nombre = nombre
+	 FIN POUR
+	 DEBUT FAIRE TANT QUE
+	 FAIRE
+	 	Ecrire "souhaitez vous afficher une autre table oui(O) ou non(N)"
+	 	Lire saisieUtilisateur
+	 DEBUT SI
+	 	SI saisieUtilisateur = N
+	 	Alors fermetureProg = vrai
+	 	Alors saisieValide = vrai
+	 	sinon si saisieUtilisateur = O
+	 	Alors FermetureProg = false
+	 	Alors saisieValide = vrai
+	 	sinon saisieValide = faux
+	 FIN SI
+	 tant que saisieValide est faux
+	 FIN SI
+	 tant que fermetureProg est faux
+	FIN DU PROGRAMME
 	 */
 	public static void main(String[] args) {
 		
 		// declaration des variables
 		int nombre;
 		int i;
-		String test = null;
+		int resultat;
+		boolean fermetureProg;
+		String saisieUtilisateur;
+		
 		
 		// on ouvre le scanner
 		Scanner hasscan = new Scanner(System.in);
@@ -50,32 +65,14 @@ public class app {
 		// on affecte la variable nombre
 		nombre = hasscan.nextInt();
 		
-		// on affecte la variable i
-		i = 1;
-		
-		
-		for(i = 1; i <= 10; i++)
+		// on fait une boucle for pour afficher la table du nombre de 0 à 10
+		for(i = 0; i <= 10; i++)
 		{
-			System.out.println(i +  " * " + nombre +  " = " + (nombre = nombre * i));
-	
-
-		System.out.println("souhaitez vous afficher une autre table ? oui(o) ou non(n)");
-		
-			if ((test.equals("o")) || (test.equals("O")))
-			{
-				for(i = 1; i <= 10; i++)
-				{
-					System.out.println(i +  " * " + nombre +  " = " + (nombre = nombre * i));
-					System.out.println("souhaitez vous afficher une autre table ? oui(o) ou non(n)");
-				}
-			}
-			else 
-			{
-				System.exit(0);
-			}
-
+			resultat = i * nombre;
+			System.out.println(i +  " * " + nombre +  " = " + resultat);
 		}
 		
+		// on ferme le scanner
 		hasscan.close();
 	}
 
