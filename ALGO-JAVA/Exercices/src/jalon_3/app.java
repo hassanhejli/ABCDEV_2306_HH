@@ -79,13 +79,24 @@ public class app {
 							saisieUtilisateur = hasscan.next();
 							if (saisieUtilisateur.equals("n") || saisieUtilisateur.equals("N"))
 							{
-								fermetureProg = true;
+								fermetureProg = false;
 								saisieValide = true;
 							}
 							else if (saisieUtilisateur.equals("o") || saisieUtilisateur.equals("O"))
 							{
 								fermetureProg = false;
 								saisieValide = true;
+								System.out.println("Saisir un nombre entre 1 et 10");
+								nombre = hasscan.nextInt();
+									if (nombre >= 1 && nombre <= 10)
+									{
+										saisieValide = true;
+										for (i=0; i<=10; i++)
+										{
+											resultat = i * nombre;
+											System.out.println(i + " * " + nombre + " = " + resultat);
+										}
+									}
 							}
 							else
 							{
@@ -102,3 +113,4 @@ public class app {
 		}
 
 	}
+	
