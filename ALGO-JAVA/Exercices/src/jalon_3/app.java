@@ -60,7 +60,7 @@ public class app {
 		Scanner hasscan = new Scanner(System.in);
 		
 		
-		do
+		do // tant que le nombre saisi est entre 1 et 10
 			{
 			
 			System.out.println("Saisir un nombre entre 1 et 10");
@@ -68,12 +68,12 @@ public class app {
 				if (nombre >= 1 && nombre <= 10)
 				{
 					saisieValide = true;
-					for (i=0; i<=10; i++)
+					for (i=0; i<=10; i++) //repeter la boucle 10fois
 					{
 						resultat = i * nombre;
 						System.out.println(i + " * " + nombre + " = " + resultat);
 					}
-						do
+						do // tant que 
 						{
 							System.out.println("souhaitez vous afficher une autre table oui(O) ou non(N)");
 							saisieUtilisateur = hasscan.next();
@@ -82,7 +82,7 @@ public class app {
 								fermetureProg = false;
 								saisieValide = true;
 							}
-							else if (saisieUtilisateur.equals("o") || saisieUtilisateur.equals("O"))
+							else if (saisieUtilisateur.equals("o") || saisieUtilisateur.equals("O")) // on repropose une nouvelle table
 							{
 								fermetureProg = false;
 								saisieValide = true;
@@ -102,11 +102,11 @@ public class app {
 							{
 								saisieValide = false;
 							}
-						}while(!saisieValide);
+						}while(!saisieValide); // fin tant que table
 				}
 				
 			}
-		while(fermetureProg = false);
+		while(fermetureProg = false); // fin tant que nombre entre 1 et 10
 			
 			hasscan.close();
 
