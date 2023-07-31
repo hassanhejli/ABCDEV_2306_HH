@@ -6,7 +6,7 @@ public class app {
 
 	public static void main(String[] args) {
 		
-		// on initialise les variables
+		// on initialize les variables
 		int position = 2;
 		int nb;
 		String resultat = "\t0\n\t1";
@@ -22,7 +22,7 @@ public class app {
 		{
 			
 		// on affiche les message a l'utilisateur
-		System.out.println("Combien de nombres de la suite de Fibonacci souhaitez vous affiches: ");
+		System.out.println("Combien de nombres de la suite de Fibonacci souhaitez vous afficher : ");
 		System.out.println("tapez la touche 0 pour quitter le programme");
 		nb = hasscan.nextInt();
 		
@@ -50,9 +50,7 @@ public class app {
 			System.out.println("les " + nb + " premiers nombres de la suite de Fibonacci sont \n" + resultat);
 			System.out.println(nb + " nombres affiches");
 		}
-	
-
-	while (nb!=0); 
+		while (nb!=0); 
 	
 		
 	// on ferme le scanner
