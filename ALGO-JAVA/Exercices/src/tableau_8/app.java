@@ -30,7 +30,7 @@ public class app {
 			tabNb[i] = hasscan.nextInt();
 		}
 		
-		// on boucle pour afficher les valeurs dans la console
+		// on boucle pourselectionner la valeur la plus grande 
 		for (i = 0; i < tabNb.length; i++)
 		{
 			
@@ -40,6 +40,7 @@ public class app {
 			}
 		}
 
+		// on affiche la valeur la plus grande dans la console
 		System.out.println("Le nombre le plus grand est : "+ plusGrand);
 		
 		// on ferme le scanner
