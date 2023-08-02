@@ -29,6 +29,8 @@ public class app {
 		// on fait appel a la procedure moyenne
 		moyenne(nombre1, nombre2);
 		
+		// on ferme le scanner
+		hasscan.close();
 	}
 
 }
