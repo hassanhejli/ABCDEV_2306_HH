@@ -15,7 +15,7 @@ public class app {
 	{
 		double p = a + b+ c;
 		double aire;
-		aire = ((p/2-a)*(p/2-b)*(p/2-c));
+		aire = ((p/2-a)*(p/2-b)*(p/2-c))*1/2;
 		System.out.println("l'aire de ce triangle est de : " + aire);	
 	}
 
