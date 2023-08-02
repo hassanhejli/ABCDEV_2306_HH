@@ -23,7 +23,7 @@ public class app {
 	 
 	 */
 	
-	// declaration procedure moyenne
+	// declaration fonction moyenne
 	public static double calculMoyenne (double a,double b)
 	{
 		double moyenne;
