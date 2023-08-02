@@ -3,12 +3,33 @@ package procedure_3;
 import java.util.Scanner;
 
 public class app {
+	
+	/*
+	 FONCTION Reel moyenne (reel a, reel b)
+	 	moyenne est un Reel
+	 	moyenne <-- (a+b)/2
+	 	retourne Moyenne
+	 FIN FONCTION
+	 VARIABLE
+	 	nombre1 est un reel
+	 	nombre2 est un reel
+	 DEBUT DU PROGRAMME
+	 	Ecrire "saisir le 1er nombre"
+	 	Lire nombre1
+	 	Ecrire "saisir le 2nd nombre"
+	 	Lire nombre2
+	 	Ecrire "la moyenne des deux nombres est: ", moyenne(nombre1,nombre2)
+	 FIN DU PROGRAMME
+	 
+	 */
+	
 	// declaration procedure moyenne
-	public static void moyenne (double a,double b)
+	public static double calculMoyenne (double a,double b)
 	{
 		double moyenne;
 		moyenne = ((a+b)/2);
-		System.out.println("la moyenne des deux nombres est égale à " + moyenne);
+		
+		return moyenne;
 	}
 
 	public static void main(String[] args) {
@@ -26,8 +47,8 @@ public class app {
 		System.out.println(" veuillez entrez le nombre2 :");
 		nombre2 = hasscan.nextDouble();
 		
-		// on fait appel a la procedure moyenne
-		moyenne(nombre1, nombre2);
+		// on affiche la moyenne dans la console au moyen de la procedure
+		System.out.print("la moyenne des deux nombres est égale à: " + calculMoyenne(nombre1,nombre2));
 		
 		// on ferme le scanner
 		hasscan.close();

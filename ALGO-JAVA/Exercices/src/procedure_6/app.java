@@ -13,7 +13,7 @@ public class app {
         {
             newStr = newStr + str.charAt(i);
         }
-        System.out.println("votre chaine de charactere apres inversion est : " + newStr);
+        System.out.println("votre chaine de caractere apres inversion est : " + newStr);
     }
 	
 	
@@ -25,9 +25,9 @@ public class app {
 		// on ouvre le scanner
 		Scanner hasscan = new Scanner(System.in);
 		
-		// on de mande a l'utilisateur d'entrez une chaine de caractere et on la lit
+		// on demande a l'utilisateur d'entrez une chaine de caractere et on la lit
 		System.out.println("veuillez entrez une chaine de caractere");
-		caractere = hasscan.next();	
+		caractere = hasscan.nextLine();	
 		
 		// on affiche la chaine de caractere que l'utilisateur a entrer
 		System.out.println("votre chaine de caractere avant inversion est : " + caractere);
