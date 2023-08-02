@@ -65,7 +65,7 @@ public class app {
 		// on fait appel a la procedure dateValide pour determiner si la date est valide ou non
 		dateValide(jour, mois, annee);
 		
-		
+		hasscan.close();
 
 	}
 
