@@ -5,13 +5,19 @@ import java.util.Scanner;
 public class app {
 
 	// declaration procedure
-	public static void bissextile (int a)
+	public static boolean bissextile (int a)
 	{
-		if ((a % 4 == 0 && a % 100 > 0) || (a % 400 == 0)) {
+		boolean estBissextile;
+		if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) 
+		{
+			estBissextile = true;
 			System.out.println("cette année est bissextile");
-		} else {
+		} else 
+		{
+			estBissextile = false;
 			System.out.println("cette annee n'est pas bissextile");
 		}
+		return estBissextile;
 	}
 	
 	public static void main(String[] args) {
@@ -26,7 +32,7 @@ public class app {
 		System.out.println(" veuillez saisir une annee ");
 		annee = hasscan.nextInt();
 		
-		// on fait appel a la procedure
+		// on fait appel a la fonction
 		bissextile(annee);
 		
 		// on ferme le scanner
