@@ -8,7 +8,7 @@ public class app {
 	public static boolean estDivisible(int a, int b)
 	{
 		boolean divise;
-		if (a %b == 0)
+		if (a % b == 0)
 		{
 			divise = true;
 			System.out.println("l'entier " + a + " est divisible par l'entier " + b);
