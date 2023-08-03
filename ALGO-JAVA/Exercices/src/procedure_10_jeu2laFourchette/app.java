@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class app {
 
 	
-	public static int nbAleatoire(int nbMax, int nbMin)
+	public static int nbAleatoire(int nbMin, int nbMax)
 	{
 		int nombre;
 		Random rand = new Random();
-		nombre = rand.nextInt(nbMax , nbMin);
+		nombre = rand.nextInt(nbMin , nbMax);
 		return nombre;
 	}
 	
@@ -115,6 +115,7 @@ Fin du programme
 			System.out.println("saisir un nombre entre " + min + " et " + max);
 			nbJoueur = hasscan.nextInt();
 			nbOrdi = nbAleatoire(min,max);
+			System.out.println(nbOrdi);
 			essai ++;
 			
 			if (nbJoueur == nombreMystere)
