@@ -6,7 +6,8 @@ public class app {
 	public static void plusGrand(int a, int i, int[] tabNb)
 	{
 		int grandCh=0;
-		// pour i en entree a zero et i en sortie = au nombre du tableau afficher le plus grand nombre
+		
+		// pour i en entree a zero et i en sortie la longueur du tableau =  afficher le plus grand nombre
 		for (i = 0; i < tabNb.length; i++)
 		{
 		
