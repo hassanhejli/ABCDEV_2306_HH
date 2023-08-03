@@ -16,7 +16,7 @@ public class app {
 	public static void main(String[] args) {
 		
 		// declaration variables
-		int chiffre1, chiffre2, chiffre3, chiffre4, chiffre5, sommeChiffre;
+		int chiffre1, chiffre2, chiffre3, chiffre4, chiffre5;
 		
 		// ouverture scanner
 		Scanner hasscan = new Scanner(System.in);
