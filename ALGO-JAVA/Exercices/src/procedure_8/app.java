@@ -16,7 +16,7 @@ public class app {
 				grandCh= tabNb[i];
 			}
 		}
-		System.out.println(grandCh);
+		System.out.println("le plus grand nombre saisi est: " + grandCh);
 	}
 
 	public static void main(String[] args) {

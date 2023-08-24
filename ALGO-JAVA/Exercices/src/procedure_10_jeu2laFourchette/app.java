@@ -120,7 +120,7 @@ Fin du programme
 			
 			if (nbJoueur == nombreMystere)
 			{
-				System.out.println("Le joueur humain à gagner en "+ essai);
+				System.out.println("Le joueur humain a gagner en "+ essai);
 			}
 			else
 			{
