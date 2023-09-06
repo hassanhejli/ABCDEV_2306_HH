@@ -8,10 +8,10 @@ public class PoupeeRusse {
 	boolean estFermee;
 	boolean estDansPoupee;
 	boolean contientPoupee;
-	public boolean peutSouvrir;
-	public boolean peutSeFermer;
-	public boolean peutContenir;
-	public boolean peutEtreContenue;
+	private boolean peutSouvrir;
+	private boolean peutSeFermer;
+	private boolean peutContenir;
+	private boolean peutEtreContenue;
 	
 	
 	// constructeur

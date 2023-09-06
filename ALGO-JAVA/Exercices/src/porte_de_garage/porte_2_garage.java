@@ -4,46 +4,33 @@ public class porte_2_garage {
 	
 	//attributs
 	
-	final int degreMax;
-	final int degreMin;
-	public int degreOuverture;
-	public double largeurEnM;
-	public double longueurEnM;
-	public String couleur;
-	public boolean electrique;
-	public boolean sectionnelle;
-	public boolean estOuverte;
-	public boolean estVerrouiller;
+	private final String marque;
+	private final int degreMax;
+	private final int degreMin;
+	private int degreOuverture;
+	private boolean estOuverte;
+	private boolean estVerrouiller;
 	
 	
 	// constructeur par default
 	public porte_2_garage()
 	{
+		marque = " ";
 		degreMax = 45;
 		degreMin = 15;
 		degreOuverture = 30;
-		largeurEnM = 2.3;
-		longueurEnM = 2.5;
-		couleur = " ";
-		electrique = true;
-		sectionnelle = false;
-		estOuverte = false;
-		estVerrouiller = true;
+		estOuverte = true;
+		estVerrouiller = false;
 	}
 	
-	public porte_2_garage(int _degreMax, int _degreMin, int _degreOuverture, double _largeurEnM , double _longueurEnM , String _couleur ,
-							boolean _electrique , boolean _sectionnelle ,
+	public porte_2_garage(String _marque, int _degreMax, int _degreMin, int _degreOuverture,
 							boolean _estOuverte , boolean _estVerrouiller)
 			
 	{
+		this.marque = _marque;
 		this.degreMax = _degreMax;
 		this.degreMin = _degreMin;
 		this.degreOuverture = _degreOuverture;
-		this.largeurEnM = _largeurEnM;
-		this.longueurEnM = _longueurEnM;
-		this.couleur = _couleur;
-		this.electrique = _electrique;
-		this.sectionnelle = _sectionnelle;
 		this.estOuverte = _estOuverte;
 		this.estVerrouiller = _estVerrouiller;
 		
@@ -84,14 +71,14 @@ public class porte_2_garage {
 	
 	public boolean fermer()
 	{
-		if (this.estOuverte)
+		if (this.estOuverte && !this.estVerrouiller)
 		{
 			this.estOuverte = false;
-					return true;
+					return false;
 		}
 		else 
 		{
-			return false;
+			return true;
 		}
 	}
 	
@@ -121,6 +108,8 @@ public class porte_2_garage {
 		}
 	}
 	
+	
+ 
 
 	
 	

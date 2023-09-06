@@ -4,9 +4,9 @@ public class app_poupeeRusse {
 
 	public static void main(String[] args) {
 		
-		PoupeeRusse poupeeRusse = new PoupeeRusse (3, true, true, false, false, false, true, true, true);
+		PoupeeRusse poupeeRusse = new PoupeeRusse (3, true, true, false, false, true, true, false, true);
 		
-		PoupeeRusse p = new PoupeeRusse(5, true, true, false, false, false, true, true, true);
+		PoupeeRusse p = new PoupeeRusse(5, true, true, false, true, false, false, true, true);
 		
 		boolean test1 = poupeeRusse.ouvrir();
 		boolean test2 = poupeeRusse.fermer();
