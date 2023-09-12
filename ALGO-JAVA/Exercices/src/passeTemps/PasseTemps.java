@@ -155,7 +155,7 @@ public boolean nouvelleSeconde()
 
 public void quelleHeureEstIl()
 {
-	String ilEst = this.heure + " " +  this.minute + " " + this.seconde ;
+	String ilEst = "il est " + this.heure + " heure "  +  this.minute + " minutes " + this.seconde + " secondes ";
 	System.out.println(ilEst);
 }
 

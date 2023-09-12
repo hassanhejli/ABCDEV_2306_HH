@@ -3,6 +3,7 @@ package bureauReglable;
 public class BureauReglable {
 	
 	//ATTRIBUTS
+	
 	final int hauteurMax;
 	final int hauteurMin;
 	private int hauteurCourante;
@@ -14,6 +15,7 @@ public class BureauReglable {
 	
 	
 	// CONSTRUCTEUR AVEC PARAMETRES
+	
 	BureauReglable( int _hauteurMax, int _hauteurMin, int _hauteurCourante, int _position1,
 					int _position2, int _position3, boolean _estHauteurMax, boolean _estHauteurMin)
 	{
@@ -27,7 +29,9 @@ public class BureauReglable {
 		this.estHauteurMin = _estHauteurMin;
 	}
 	
+	
 	// GETTERS
+	
 	public int get_hauteurMax()
 	{
 		return hauteurMax;
@@ -61,8 +65,8 @@ public class BureauReglable {
 		return estHauteurMin;
 	}
 	
-	//SETTERS
 	
+	//SETTERS
 	
 	public void sethauteurCourante(int _hauteurCourante)
 	{
@@ -77,7 +81,9 @@ public class BureauReglable {
 		estHauteurMin = _estHauteurMin;
 	}
 	
+	
 	// METHODES
+	
 	public boolean monter(int hauteur)
 	{
 		if (this.hauteurCourante + hauteur < this.hauteurMax)
@@ -94,28 +100,26 @@ public class BureauReglable {
 		}
 		else
 		{
-			this.estHauteurMax = true;
 			return false;
 		}
 	}
 	
 	public boolean descendre(int hauteur)
 	{
-		if (this.hauteurCourante + hauteur > this.hauteurMin)
+		if (this.hauteurCourante - hauteur > this.hauteurMin)
 		{
-			this.hauteurCourante = this.hauteurCourante + hauteur;
+			this.hauteurCourante = this.hauteurCourante - hauteur;
 			this.estHauteurMin = false;
 			return true;
 		}
-		else if (this.hauteurCourante + hauteur == this.hauteurMin)
+		else if (this.hauteurCourante - hauteur == this.hauteurMin)
 		{
-			this.hauteurCourante = this.hauteurCourante + hauteur;
+			this.hauteurCourante = this.hauteurCourante - hauteur;
 			this.estHauteurMin = true;
 			return true;
 		}
 		else
 		{
-			this.estHauteurMin = true;
 			return false;
 		}
 	}
@@ -127,13 +131,11 @@ public class BureauReglable {
 		{
 			this.hauteurCourante = position[index -1];
 			return true;
-		} else {
+		} else 
+		{
 			return false;
 		}
 	}
-	
-	
-	
-	
+		
 	
 }

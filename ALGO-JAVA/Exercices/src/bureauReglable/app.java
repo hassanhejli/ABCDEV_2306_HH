@@ -14,7 +14,7 @@ public class app {
 		boolean test6 = bureauReglableProg.choisirPosition(5);
 		boolean test7 = bureauReglableProg.descendre(90);
 		
-
 	}
 
 }
+
