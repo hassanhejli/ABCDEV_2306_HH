@@ -7,7 +7,7 @@ public class Article {
 	private String reference;
 	private String designation;
 	private double prixHT;
-	public final int tauxTVA = 21;
+	public static double tauxTVA = 21;
 	
 	// CONSTRUCTEUR PAR DEFAULT
 	
@@ -48,26 +48,32 @@ public class Article {
 	
 	public void setReference(String _reference)
 	{
-		reference = _reference;
+		this.reference = _reference;
 	}
 	public void setDesignation(String _designation)
 	{
-		designation = _designation;
+		this.designation = _designation;
 	}
 	public void setPrixHT(double _prixHT)
 	{
-		prixHT = _prixHT;
+		this.prixHT = _prixHT;
 	}
 	
-	public void prixTTC()
+	
+	// METHODES
+	
+	public double prixTTC()
 	{
 		double _prixTTC = this.prixHT + ((this.prixHT * tauxTVA)/100);
-		System.out.println(_prixTTC);
+		return _prixTTC;
 	}
 	
-	public void afficherArticle()
+	public String afficherArticle()
 	{
-		System.out.println(this.designation + " " + this.reference + " " + this.prixHT);
+		return "Reference: " + this.get_reference()
+		+"\nDesignation: " + this.get_reference()
+		+"\nPrixHT: " + this.get_prixHT();
+		
 	}
 	
 	

@@ -25,6 +25,38 @@ public class Robot
 		
 	}
 	
+	// GETTERS
+	
+	public int get_force()
+	{
+		return force;
+	}
+	public int get_vitesseMarche()
+	{
+		return vitesseMarche;
+	}
+	public int get_vitesseRotation()
+	{
+		return vitesseRotation;
+	}
+	
+	// SETTERS
+	
+	public void setForce(int _force)
+	{
+		force = _force;
+	}
+	public void setVitesseMarche(int _vitesseMarche)
+	{
+		vitesseMarche = _vitesseMarche;
+	}
+	public void setVitesseRotation(int _vitesseRotation)
+	{
+		vitesseRotation = _vitesseRotation;
+	}
+	
+	// fonction qui retourne une fonction pour chaque variable de l'enum
+	
 	public boolean action (Action _action)
 	{
 		switch (_action)
@@ -58,7 +90,9 @@ public class Robot
 		}		
 	}
 	
-	public boolean marcher (int _avantArriere) // le parametre definit si le robot avance (1) o u recule (-1)
+	// fonction pour faire avancer ou reculer le robot
+	
+	public boolean marcher (int _avantArriere) 
 	{
 		if (_avantArriere > 0)
 		{
@@ -82,8 +116,9 @@ public class Robot
 		}
 	}
 	
+	// fonction pour faire tourner gauche ou droite le robot 
 	
-	public boolean tourner ( int _sens) // le parametre definit si le robot tourne a gauche (1) ou  a droite (-1)
+	public boolean tourner ( int _sens) 
 	{
 		if (_sens > 0)
 		{
@@ -109,6 +144,7 @@ public class Robot
 		return true;
 	}
 	
+	// fonction pour detruire l'adversaire
 	public boolean destruction (boolean destroy)
 	{
 		if (this.force >= 5)
@@ -123,6 +159,8 @@ public class Robot
 		}
 	}
 	
+	// fonction pour attaquer qui augmente la valeur du robot
+	
 	public boolean attaque(boolean attack)
 	{
 		if (attack = true)
@@ -135,6 +173,8 @@ public class Robot
 			return false;
 		}
 	}
+	
+	// fonction pour multiplier la force du robot
 	
 	public boolean XForce(boolean forceMultiple)
 	{
@@ -149,6 +189,8 @@ public class Robot
 		}
 	}
 	
+	// fonction pour multiplier la vitesse du robot
+	
 	public boolean Xvitesse (boolean vitesseMultiple)
 	{
 		if (vitesseMultiple = true)
@@ -161,11 +203,6 @@ public class Robot
 		{
 			return false;
 		}
-	}
-	
-	public int get_force()
-	{
-		return force;
 	}
 	
 	

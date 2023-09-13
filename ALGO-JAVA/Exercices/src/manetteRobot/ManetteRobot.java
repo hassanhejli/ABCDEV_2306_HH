@@ -4,6 +4,9 @@ import manetteRobot.Robot.Action;
 
 public class ManetteRobot 
 {
+	
+	// ATTRIBUTS
+	
 	private Robot terminator;
 	private boolean boutonStart;
 	private boolean boutonReset;
@@ -12,12 +15,18 @@ public class ManetteRobot
 		boutonA, boutonB, boutonX, boutonY, flecheHaut, flecheBas, flecheGauche, flecheDroite
 	}
 	
+	// CONSTRUCTEUR
+	
 	public ManetteRobot ( Robot _terminator, boolean _boutonStart, boolean _boutonReset)
 	{
 		this.terminator = _terminator;
 		this.boutonStart = _boutonStart;
 		this.boutonReset = _boutonReset;
 	}
+	
+	
+	
+	// ON ASSOCIE CHAQUE BOUTON A UNE FONCTION DU ROBOT
 	
 	public boolean commande (Bouton _Bouton)
 	{
